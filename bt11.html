@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bt11</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: white;
+            background-color: orange;
+            width: 500px;
+            padding: 8px
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        #name {
+            width: 250px;
+            padding: 5px;
+        }
+
+        #email {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <tr><h2>SỞ THÍCH CỦA BẠN</h2>
-      
-    </tr>
-    <label for="yourname">Họ và tên</label> &nbsp;
-    <input type="text" value="">
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <label for="email">Email</label> &nbsp;
-    <input type="email" name="email" id="email">
-    <br>
-    <label for="sothich">Sở thích</label>
-    <input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Thể thao</label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Âm nhạc</label>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Đọc sách</label>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Lướt web</label>
-    &nbsp;&nbsp;
-    <input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Chơi game</label>
-    &nbsp;&nbsp;
-    <input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Điện ảnh</label>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="checkbox" name="sothich" id="sothich">
-    <label for="sothich">Du lịch</label>
-    <br>
-    <button type:submit>Gửi thông tin</button> <button type:reset>Nhập lại</button>
+    <h2>SỞ THÍCH CỦA BẠN</h2>
+    <div>
+        <label for="yourname" class="blue">Họ và tên</label> &nbsp;
+        <input type="text" id="name" value="">
+        <div>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="email" class="blue">Email</label> &nbsp;
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <div style="align-content: center;">
+            <label for="sothich" class="blue">Sở thích</label>
+            <input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Thể thao</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Âm nhạc</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Đọc sách</label>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Lướt web</label>
+            &nbsp;&nbsp;
+            <input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Chơi game</label>
+            &nbsp;&nbsp;
+            <input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Điện ảnh</label>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="sothich" id="sothich">
+            <label for="sothich" style="color: orange;">Du lịch</label>
+        </div>
+        <br>
+        <button type:submit>Gửi thông tin</button> <button type:reset>Nhập lại</button>
 
 </body>
+
 </html>
