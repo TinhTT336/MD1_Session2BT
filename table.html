@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <table border="4" cellpadding="20" cellspacing="0" width="100%">
+        <!--Tiêu đề bảng-->
+        <caption align="">
+            <h1>My Table</h1>
+        </caption>
+        <!--Phần đầu bảng-->
+        <thead>
+            <tr bgcolor="madarin"><!--tr: table row- dòng/ th: table heading- tiêu đề bảng-->
+                <th height="70" valign="top">STT</th>
+                <th>Họ và tên</th>
+                <th>Tuổi</th>
+                <th>Quê quán</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr bgcolor="pink">
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td align="right">22</td>
+                <td rowspan="2">Hà Nội</td>
+            </tr>
+            <tr bgcolor="red">
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>23</td>
+            </tr>
+            <tr bgcolor="violet">
+                <td>3</td>
+                <td>Hồ Văn C</td>
+                <td>25</td>
+                <td rowspan="2">Hà Nam</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Phạm Văn D</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Sĩ số</th>
+                <th colspan="2">4</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <table border="1" cellpadding="12">
+        <thead>
+            <tr>
+                <th width="100px">Tháng</th>
+                <th width="200px">Doanh thu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Một</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Hai</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Tổng: $180</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <table border="1" width="100%" cellpadding="12" cellspacing="0">
+        <thead>
+            <tr>
+                <th width="80px">Quý</th>
+                <th width="100px">Tháng</th>
+                <th width="140px">Doanh thu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Một</td>
+                <td>Một</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Hai</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Ba</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Hai</td>
+                <td>Bốn</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Năm</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Sáu</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+    <br>
+    <form><!--có thể dử dụng form cho cả bảng, hoặc bọc các dòng sử dụng form-->
+        <table border="1">
+            <caption>Rikkei Academy - Order</caption>
+            <tbody>
+                <tr>
+                    <td rowspan="10"><b>RA</b></td>
+                    <td width=""><b>Order no:</b></td>
+                    <td colspan="3" cellspacing="0">
+                        <input type="text" name="no" id="no" value="#RA001" style="display: block; width: 99% ">
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Order date:</b></td>
+                    <td colspan="3">
+                        <input type="text" name="date" id="date" value="02/12/2023" style="display: block; width: 99% ">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center"><b>Customer</b></td>
+                </tr>
+                <tr>
+                    <th align="left"> <label for="name">Name:</label></td>
+                    <td colspan="3">
+                        <input type="text" name="name" id="name" value="NGUYEN VAN A" width="100%"
+                            style="display: block; width: 99% ">
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left"> <label for="add">Address:</label></td>
+                        <td colspan="3">
+                        <input type="text" name="add" id="add"
+                            value="7th floor, Tower A, Song Da building, Nam Tu Liem district, Hanoi"
+                            style="display: block; width: 99% ">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="4">Order Detail</th>
+                </tr>
+                <tr>
+                    <td width="120" align="center">1</td>
+                    <td width="240">HTML</td>
+                    <td width="120">Book</td>
+                    <td align="right" width="180">10.00$</td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td>CSS</td>
+                    <td>Book</td>
+                    <td align="right">12.00$</td>
+                </tr>
+                <tr>
+                    <td align="center">3</td>
+                    <td>Javascript</td>
+                    <td>DVD</td>
+                    <td align="right">50.00$</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right"><b>Total:</b></td>
+                    <td align="right">72.00$</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </form>
+    <br>
+    <br>
+    
+
+</body>
+
+</html>
